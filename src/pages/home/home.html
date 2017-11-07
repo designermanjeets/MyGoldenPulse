@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      MyGoldenPulse <ion-icon name="pulse"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-fab center middle>
+    <button ion-fab color="danger"><ion-icon name="pulse"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary"><ion-icon name="egg"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <button ion-fab color="primary"><ion-icon name="headset"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button (click)="goToOtherPage()" ion-fab color="dark"><ion-icon name="bicycle"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="right">
+      <button ion-fab color="dark"><ion-icon name="body"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
