@@ -10,7 +10,7 @@ import { WorkoutComponent } from '../components/workout/workout';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = WorkoutComponent;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

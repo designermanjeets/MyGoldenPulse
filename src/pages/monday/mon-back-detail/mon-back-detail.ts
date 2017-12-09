@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ComponentMonPage page.
+ * Generated class for the MonBackPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-component-mon',
-  templateUrl: 'component-mon.html',
+  selector: 'page-mon-back',
+  templateUrl: 'mon-back-detail.html',
 })
-export class ComponentMonPage {
-
+export class MonBackDetailPage {
+  item;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  this.item = navParams.data.item;
+    console.log(navParams.data); 
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ComponentMonPage');
+    console.log('ionViewDidLoad MonBackPage');
   }
+
 
 }

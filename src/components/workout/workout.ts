@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HomePage } from './../../pages/home/home';
-import { ComponentMonPage } from './../../pages/component-mon/component-mon';
+import { MondayPage } from './../../pages/monday/monday';
 
 /**
  * Generated class for the WorkoutComponent component.
@@ -27,7 +27,7 @@ export class WorkoutComponent {
   }
 
   goToMon(){
-    this.navCtrl.push(ComponentMonPage);
+    this.navCtrl.push(MondayPage);
   }
 
 }
